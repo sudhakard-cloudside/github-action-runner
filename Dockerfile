@@ -1,8 +1,8 @@
-FROM openjdk:8-jdk-alpine
+# This Dockerfile is used for a youtube tutorial
+# base image - nginx with tag "latest"
+FROM nginx
 
-EXPOSE 8089
+# Adding custom index.html hosted on Github Gist
+COPY index.html /usr/share/nginx/html/
 
-ARG JAR_FILE=target/github-actions-gke-0.0.1-SNAPSHOT.jar
-ADD ${JAR_FILE} app.jar
-
-ENTRYPOINT exec java -jar /app.jar
+EXPOSE 80

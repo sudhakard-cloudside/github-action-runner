@@ -9,8 +9,8 @@ env:
   PROJECT_ID: ${{secrets.GKE_PROJECT}}
   GKE_CLUSTER: sudhakar-test-ak
   GKE_ZONE: us-central1-c
-  DEPLOYMENT_NAME: github-action-self-hosted-runner
-  IMAGE: github-actions-gke-image
+  DEPLOYMENT_NAME: demo
+  IMAGE: test
   TAG: 1.0.0
 
 jobs:

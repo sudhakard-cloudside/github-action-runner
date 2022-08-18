@@ -11,7 +11,7 @@ env:
   GKE_ZONE: us-central1-c
   DEPLOYMENT_NAME: github-action-self-hosted-runner
   IMAGE: github-actions-gke-image
-  TAG: 1.0.1
+  TAG: 1.0.0
 
 jobs:
   setup-build-publish-deploy:

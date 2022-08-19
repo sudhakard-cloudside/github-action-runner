@@ -44,7 +44,7 @@ jobs:
           gcloud --quiet auth configure-docker
       - name: Get GKE Credentials
         run: |-
-          gcloud container clusters get-credentials sudhakar-test-ak --zone us-central1-c
+          gcloud container clusters get-credentials sudhakar-ak-test --zone us-central1-c
       - name: Build Docker Image
         run: |-
           docker build --tag "us-central1-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/$IMAGE:$TAG" .

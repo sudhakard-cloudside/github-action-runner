@@ -14,5 +14,5 @@ spec:
     spec:
       containers:
         - name: app
-          image: gcr.io/PROJECT_ID/IMAGE:TAG
+          image: us-central1-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/$IMAGE:$TAG
           imagePullPolicy: Always

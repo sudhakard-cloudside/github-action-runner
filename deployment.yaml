@@ -15,4 +15,5 @@ spec:
       containers:
         - name: app
           image: us-central1-docker.pkg.dev/$PROJECT_ID/$REPO_NAME/$IMAGE:$TAG
-          imagePullPolicy: Always
+          ports:
+         - containerPort: 80

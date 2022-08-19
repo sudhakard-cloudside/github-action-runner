@@ -41,7 +41,7 @@ jobs:
 
       - name: Configure Docker
         run: |-
-          gcloud --quiet auth configure-docker
+          gcloud auth configure-docker  us-central1-docker.pkg.dev
       - name: Get GKE Credentials
         run: |-
           gcloud container clusters get-credentials sudhakar-ak-test --zone us-central1-c

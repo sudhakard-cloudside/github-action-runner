@@ -9,7 +9,7 @@ env:
   PROJECT_ID: ${{secrets.GKE_PROJECT}}
   GKE_CLUSTER: sudhakar-test-ak
   GKE_ZONE: us-central1-c
-  DEPLOYMENT_NAME: demo
+  DEPLOYMENT_NAME: github-action
   IMAGE: test
   TAG: 1.0.0
   REPO_NAME : sudhakar-test
